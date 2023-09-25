@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    display: flex;
+}
+
+a{
+    text-decoration: none ;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100%;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: black;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #54CD9B;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #54CD9B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+.btn:hover{
+    background-color:#7fdbad;    
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #7fdbad;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: grey;
+    font-size: qrem;
+    font-weight: 600; 
+}
+
+header .content h1{
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: #54CD9B;
+    -webkit-text-stroke: 1px;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: black;
+}
+
+header .image {
+    position: relative;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: grey;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.features .card:hover{
+    background-color: white;
+    border-color:black;
+}
+
+.features .card span{
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color:#54CD9B;
+    border-radius: 5px;
+}
+
+.features .card span .cards{
+    max-width: 100%;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color:#54CD9B;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+.card .sub-header{
+    max-width: 2000px;
+    height: 328px;
+    background-color:#54CD9B;
+    display:grid;
+    border-radius: 15px;
+}
+
+.card .sub-header .content{
+    flex: 1;
+}
+
+.card h2{
+    color: white;
+    align-items: center;
+    font-weight: 500;
+}
+
+.card button{
+    color: white;
+    border: 2px solid black;
+    margin-top: -8rem;
+    display: grid;
+    margin-left: 32rem;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat (1, 1fr);
+    gap: 2rem;
+}
+
+footer .row .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .row p{
+    color:black;
+    margin-bottom: 2rem;
+}
+
+footer .row .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .row .socials a{
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .row .socials a:hover{
+    color: black;
+    background-color:#54CD9B;
+    border-color: #54CD9B;
+}
+
+footer .row > a{
+    display: block;
+    color: black;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .row > a:hover{
+    color:#54CD9B;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat (1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
