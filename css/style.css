@@ -75,6 +75,10 @@ nav{
     border: 2px solid black;
 }
 
+.btn a{
+    color: white;
+}
+
 .btn:hover{
     background-color:#7fdbad;    
 }
