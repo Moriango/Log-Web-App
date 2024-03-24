@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
     <title>Log. App</title>
 </head>
 
@@ -14,7 +15,7 @@
     <nav>
         <div class="nav-logo">
             <a href="#">
-                <img src="images/Log.png" alt="Log">
+                <img src="{%static 'images/Log.png'%}" alt="Log">
             </a>
         </div>
 
@@ -23,7 +24,7 @@
             <li class="link"><a href="#">Student Guide</a></li>
             <li class="link"><a href="#">About Us</a></li>
         </ul>
-        <button class="btn" onclick="window.location.href='html/signup.html'">Login</a></button>
+        <button class="btn" onclick="window.location.href='signup/login'">Login</a></button>
     </nav>
 
     <header class="container">
@@ -33,10 +34,10 @@
             <h4>Increase your productivity</h4>
             <h1><span>Log.</span> your way to accomplish all that life has to bring!</h1>
             <p>Log all of your to-do lists, track your goals, and create reminders all in one place.</p>
-            <button class="btn"><a href="dashboard.html">Get Started Now</a><i class='bx bx-right-arrow-alt'></i></button>
+            <button class="btn"><a href="dashboard">Get Started Now</a><i class='bx bx-right-arrow-alt'></i></button>
        </div> 
        <div class="image">
-        <img src="images/header.jpg">
+        <img src="{%static 'images/header.jpg'%}">
        </div>
     </header>
 
@@ -44,7 +45,7 @@
         <h2 class="header">Our Features</h2>
         <div class="features">
             <div class="card">
-                <span><img class="cards" src="images/Card1.png"></span>
+                <span><img class="cards" src="{%static 'images/Card1.png'%}"></span>
                 <h4>Create Tasks</h4>
                 <p>
                     write down tasks to keep up to date with
@@ -53,7 +54,7 @@
             </div>
 
             <div class="card">
-                <span><img class="cards" src="images/Card2.png"></span>
+                <span><img class="cards" src="{%static 'images/Card2.png'%}"></span>
                 <h4>Set Reminders</h4>
                 <p>
                     set reminders and due dates to accomplish tasks.
@@ -61,7 +62,7 @@
             </div>
 
             <div class="card">
-                <span><img class="cards" src="images/Card3.png"></span>
+                <span><img class="cards" src="{%static 'images/Card3.png'%}"></span>
                 <h4>Take Notes</h4>
                 <p>
                     jot down notes to refer back to important information whenever you need it.
@@ -69,7 +70,7 @@
             </div>
 
             <div class="card">
-                <span><img class="cards" src="images/Card5.png"></span>
+                <span><img class="cards" src="{%static 'images/Card5.png'%}"></span>
                 <h4>Increase your Overall Productivity</h4>
                 <p>increase productivity by staying on track of accomplishing daily goals and tasks.</p>
             </div>
@@ -90,7 +91,7 @@
         <span class="blur"></span>
         <div class="column">
             <div class="logo">
-                <img src="images/Log.png" alt="Log.">
+                <img src="{%static 'images/Log.png'%}" alt="Log.">
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,6 +113,6 @@
 
 
 
-        <script src="script.js"></script>    
+        <script src="{%static 'js/script.js'%}"></script>    
     </body>
 </html>

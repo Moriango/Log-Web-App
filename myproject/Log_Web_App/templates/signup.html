@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
     
@@ -5,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="../css/signup.css">
+        <link rel="stylesheet" href="{%static 'css/signup.css' %}">
         <title>Log. App</title>
     </head>
     
@@ -16,7 +17,7 @@
             <form>
                 <h1>Create Account</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon">
+                    <a href="/" class="icon">
                         <i class='bx bxl-google'></i></a>
                     </div>
                     <span>or use your email for registration</span>
@@ -31,13 +32,13 @@
                 <form>
                     <h1>Sign In</h1>
                     <div class="social-icons">
-                        <a href="#" class="icon">
+                        <a href="/" class="icon">
                             <i class='bx bxl-google'></i></a>
                         </div>
                         <span>or use your email password</span>
                         <input type="email" placeholder="Email">
                         <input type="password" placeholder="Password">
-                        <a href="#">Forget Password?</a>
+                        <a href="/">Forget Password?</a>
                         <button>Sign In</button>
                     </form>
                 </div>
@@ -47,14 +48,14 @@
                             <h1>Welcome Back!</h1>
                             <p>Enter your information to continue.</p>
                             <button class="hidden" id="login">Sign In</button>
-                            <button class="hidden" id="login" onclick="window.location.href='../index.html'">Home</button>
+                            <button class="hidden" id="login" onclick="window.location.href='/'">Home</button>
                         </div>
                         
                         <div class="toggle-panel toggle-right">
                             <h1>Hello, Friend.</h1>
                             <p>Register with your personal information to continue.</p>
                             <button class="hidden" id="register">Sign Up</button>
-                            <button class="hidden" id="register" onclick="window.location.href='../index.html'">Home</button>
+                            <button class="hidden" id="register" onclick="window.location.href='/'">Home</button>
                         </div>
                     </div>
                 </div>
@@ -63,6 +64,6 @@
             <div class="copyright">
                 Copyright © 2023 Log. All Rights Reserved
     </div>  
-        <script src="../js/script.js"></script>    
+        <script src="{% static 'js/script.js'%}"></script>    
     </body>
 </html>
