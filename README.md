@@ -7,8 +7,13 @@ This is a simple web application for logging events or activities. It's built wi
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/chneall/Log-Web-App.git`
-2. Navigate to the project directory: `cd Log-Web-App`
-3. Open `index.html` in your browser
+2. Navigate to the django directory: `cd Log-Web-App`
+3. Start a virtual enviroment and/or Install project dependencies: `pip install -r requirements.txt`
+4. Navigate to the project directory: `cd myproject`
+5. Start the Server: `python manage.py runserver`
+
+## Example
+![Video](./Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
 ## Usage
 
