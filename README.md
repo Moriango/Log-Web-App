@@ -11,9 +11,10 @@ This is a simple web application for logging events or activities. It's built wi
 3. Start a virtual enviroment and/or Install project dependencies: `pip install -r requirements.txt`
 4. Navigate to the project directory: `cd myproject`
 5. Start the Server: `python manage.py runserver`
+6. Click on the link in the Terminal
 
 ## Example
-![Video](./Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
+![Video](./Untitled%20video%20-%20Made%20with%20Clipchamp.gif) ![Photo](./Screenshot%20(2).png)
 
 ## Usage
 
